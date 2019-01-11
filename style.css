@@ -1,0 +1,88 @@
+html,
+body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    display: block;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.board-container {
+    height: 100%;
+    width: 100%;
+}
+
+.board {
+    width: 624px;
+}
+
+.square {
+    height: 200px;
+    width: 200px;
+    border: 4px solid rgb(245, 243, 243);
+}
+
+.square.player1:hover {
+    background-color: #ffe6e6;
+}
+
+.square.player2:hover {
+    background-color: #e6e6ff;
+}
+
+.square:first-of-type {
+    border-left-color: transparent;
+    border-top-color: transparent;
+  }
+
+.square:nth-of-type(2) {
+    border-top-color: transparent;
+}
+
+.square:nth-of-type(3) {
+    border-top-color: transparent;
+    border-right-color: transparent;
+}
+
+.square:nth-of-type(4) {
+    border-left-color: transparent;
+  }
+
+.square:nth-of-type(6) {
+    border-right-color: transparent;
+}
+
+.square:nth-of-type(7) {
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+}
+
+.square:nth-of-type(8) {
+    border-bottom-color: transparent;
+}
+
+.square:nth-of-type(9) {
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+}
